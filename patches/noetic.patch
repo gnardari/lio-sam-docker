@@ -1,0 +1,26 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index a260eab..43da318 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 2.8.3)
+ project(lio_sam)
+
+ set(CMAKE_BUILD_TYPE "Release")
+-set(CMAKE_CXX_FLAGS "-std=c++11")
++set(CMAKE_CXX_FLAGS "-std=c++14")
+ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -Wall -g -pthread")
+
+ find_package(catkin REQUIRED COMPONENTS
+diff --git a/include/utility.h b/include/utility.h
+index c1f5fef..93354cd 100644
+--- a/include/utility.h
++++ b/include/utility.h
+@@ -14,7 +14,7 @@
+ #include <visualization_msgs/Marker.h>
+ #include <visualization_msgs/MarkerArray.h>
+
+-#include <opencv/cv.h>
++#include <opencv2/opencv.hpp>
+
+ #include <pcl/point_cloud.h>
+ #include <pcl/point_types.h>

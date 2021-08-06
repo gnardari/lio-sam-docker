@@ -1,0 +1,15 @@
+diff --git a/src/imageProjection.cpp b/src/imageProjection.cpp
+index ae96dae..86bbefb 100644
+--- a/src/imageProjection.cpp
++++ b/src/imageProjection.cpp
+@@ -521,8 +521,8 @@ public:
+         for (int i = 0; i < cloudSize; ++i)
+         {
+             PointType thisPoint;
+-            thisPoint.x = laserCloudIn->points[i].x;
+-            thisPoint.y = laserCloudIn->points[i].y;
++            thisPoint.x = -laserCloudIn->points[i].x;
++            thisPoint.y = -laserCloudIn->points[i].y;
+             thisPoint.z = laserCloudIn->points[i].z;
+             thisPoint.intensity = laserCloudIn->points[i].intensity;
+ 
